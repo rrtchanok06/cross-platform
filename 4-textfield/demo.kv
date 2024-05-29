@@ -1,0 +1,55 @@
+<UI>:
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        #MDTextField:
+        #    hint_text: "Enter username"
+        #    helper_text: "or click on forgot username"
+        #    helper_text_mode: "on_focus"
+        #    icon_right: "android"
+        #    icon_right_color: app.theme_cls.primary_color
+        #    pos_hint:{'center_x': 0.5, 'center_y': 0.5}
+        #    size_hint_x:None
+        #    width:300
+
+        MDTextField:
+            id: txt_input
+            mode: "filled"
+            MDTextFieldLeadingIcon:
+                icon: "magnify"
+
+            MDTextFieldHintText:
+                text: "Hint text"
+
+            MDTextFieldHelperText:
+                text: "Helper text"
+                mode: "persistent"
+
+            MDTextFieldTrailingIcon:
+                icon: "information"
+
+            MDTextFieldMaxLengthText:
+                max_text_length: 10
+
+            MDTextFieldHelperText:
+                text: "Helper text"
+                mode: "on_error"
+
+            MDTextFieldMaxLengthText:
+                max_text_length: 5
+
+        #MDRectangleFlatButton:
+        #    text:'login'
+        #    pos_hint:{'center_x': 0.5, 'center_y': 0.5}
+        #    on_release:root.show_data()
+
+        MDButton:
+            style: "elevated"
+            pos_hint:{'center_x': 0.5, 'center_y': 0.5}
+            on_press: root.show()
+            MDButtonText:
+                text: "login"
+                color: "yellow"
+                
+
+        
